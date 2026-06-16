@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "name": "James R.",
+      "country": "Austin, USA",
+      "rating": 5,
+      "quote": "Three weeks on Apex Drive and my energy through the afternoon is night and day. Discreet packaging, easy subscription. Exactly what I wanted."
+    },
+    {
+      "name": "Daniel M.",
+      "country": "London, UK",
+      "rating": 5,
+      "quote": "Tried a few brands before — this one actually feels clean and the ingredients are transparent. Stacking it with Night Recharge has been great."
+    },
+    {
+      "name": "Lucas P.",
+      "country": "Sydney, Australia",
+      "rating": 5,
+      "quote": "Ordering was simple and they answered all my questions over WhatsApp before I committed. Shipping was faster than expected."
+    },
+    {
+      "name": "Omar A.",
+      "country": "Dubai, UAE",
+      "rating": 5,
+      "quote": "Professional service and very discreet. The team confirmed everything before payment. Will be reordering for sure."
+    }
+  ]
+}

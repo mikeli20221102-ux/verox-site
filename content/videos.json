@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "title": "Apex Drive",
+      "note": "60-second daily routine",
+      "poster": "assets/img/apex-drive-cover.jpg",
+      "src": "assets/video/apex-drive.mp4"
+    },
+    {
+      "title": "Real talk",
+      "note": "What to expect in 30 days",
+      "poster": "assets/img/results-cover.jpg",
+      "src": "assets/video/results.mp4"
+    },
+    {
+      "title": "Inside the formula",
+      "note": "Third-party tested ingredients",
+      "poster": "assets/img/lab-cover.jpg",
+      "src": "assets/video/lab.mp4"
+    }
+  ]
+}

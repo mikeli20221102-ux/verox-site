@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEROX — Natural Men's Vitality Supplements, Shipped Discreetly Worldwide</title>
+  <meta name="description" id="metaDesc" content="Premium men's vitality supplements — Maca, Tongkat Ali, L-Arginine and more for energy, stamina and everyday drive. Third-party tested, vegan, discreet worldwide shipping." />
+
+  <!-- SEO: canonical + hreflang alternates are filled in by assets/js/i18n.js.
+       For production, set a fixed domain below:
+       <meta name="site-url" content="https://your-domain.com/" /> -->
+  <link rel="canonical" id="canonicalLink" href="" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="VEROX" />
+  <meta property="og:title" id="ogTitle" content="" />
+  <meta property="og:description" id="ogDesc" content="" />
+  <meta property="og:url" id="ogUrl" content="" />
+  <meta property="og:locale" id="ogLocale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" id="twTitle" content="" />
+  <meta name="twitter:description" id="twDesc" content="" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">VE<span>ROX</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a class="btn btn-small" href="#inquire" data-i18n="nav.reserve">Order now</a>
+        <select class="lang-select" id="langSelect" aria-label="Language"></select>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Men's natural vitality · Shipped worldwide</p>
+          <h1 data-i18n="hero.h1">Feel like yourself again — naturally.</h1>
+          <p class="lead" data-i18n="hero.lead">
+            Clean, third-party tested men's vitality supplements for energy, stamina and everyday
+            confidence. Subscribe and save, cancel anytime, delivered discreetly to your door.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#products" data-i18n="hero.cta1">Shop products</a>
+            <a class="btn btn-ghost" href="#inquire" data-i18n="hero.cta2">Talk to us</a>
+          </div>
+          <ul class="hero-trust">
+            <li data-i18n="hero.t1">Third-party tested</li>
+            <li data-i18n="hero.t2">Vegan, no nasties</li>
+            <li data-i18n="hero.t3">Discreet worldwide shipping</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img id="heroImage" src="assets/img/hero.jpg" alt="VEROX men's vitality supplements" loading="eager"
+               onerror="this.onerror=null;this.src='https://picsum.photos/seed/verox-hero/720/820'" />
+          <div class="hero-badge">
+            <strong>60-day</strong>
+            <span data-i18n="hero.badge">money-back guarantee</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trustbar">
+      <div class="container trustbar-grid">
+        <div><strong data-i18n="trust.s2a">Lab</strong><span data-i18n="trust.s2b">third-party tested</span></div>
+        <div><strong>100%</strong><span data-i18n="trust.s1b">Clean formulas</span></div>
+        <div><strong data-i18n="trust.s3a">Discreet</strong><span data-i18n="trust.s3b">plain packaging</span></div>
+        <div><strong data-i18n="trust.s4a">60-day</strong><span data-i18n="trust.s4b">money-back guarantee</span></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section" id="products">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="products.eyebrow">Our products</p>
+          <h2 data-i18n="products.h2">Built for everyday vitality</h2>
+          <p class="section-sub" data-i18n="products.sub">
+            Simple, clean formulas you can stack into one daily routine. Start with our bestseller,
+            or build your own bundle.
+          </p>
+        </header>
+        <div class="breed-grid product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- VIDEO GALLERY -->
+    <section class="section section-alt" id="videos">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="videos.eyebrow">See it in action</p>
+          <h2 data-i18n="videos.h2">Real routines, real ingredients</h2>
+          <p class="section-sub" data-i18n="videos.sub">
+            Replace these with your own short clips — routine demos and honest reviews convert best.
+          </p>
+        </header>
+        <div class="video-grid" id="videoGrid"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img id="aboutImage" src="assets/img/about-brand.jpg" alt="About VEROX" loading="lazy"
+               onerror="this.onerror=null;this.src='https://picsum.photos/seed/verox-about/680/760'" />
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow" data-i18n="about.eyebrow">About VEROX</p>
+          <h2 data-i18n="about.h2">Clean vitality, made simple</h2>
+          <p data-i18n="about.p1">VEROX makes premium men's vitality supplements with transparent, clinically-loved ingredients — no proprietary blends, no fillers, no fluff.</p>
+          <p data-i18n="about.p2">We believe feeling like yourself shouldn't be complicated or embarrassing. So we built simple daily formulas, discreet delivery and honest support.</p>
+          <ul class="about-points">
+            <li data-i18n="about.f1">Transparent, fully-dosed labels</li>
+            <li data-i18n="about.f2">Third-party tested every batch</li>
+            <li data-i18n="about.f3">Vegan capsules, no nasties</li>
+            <li data-i18n="about.f4">Discreet worldwide shipping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section section-alt stats" id="stats">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="stats.eyebrow">By the numbers</p>
+          <h2 data-i18n="stats.h2">Trusted by men worldwide</h2>
+        </header>
+        <div class="stats-grid">
+          <div><strong id="statCustomers">8,000+</strong><span data-i18n="stats.l1">Happy customers</span></div>
+          <div><strong id="statCountries">20+</strong><span data-i18n="stats.l2">Countries shipped</span></div>
+          <div><strong id="statReorder">72%</strong><span data-i18n="stats.l3">Reorder rate</span></div>
+          <div><strong id="statSatisfaction">4.8/5</strong><span data-i18n="stats.l4">Average rating</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
+          <h2 data-i18n="how.h2">From first order to feeling great</h2>
+        </header>
+        <ol class="steps">
+          <li>
+            <span class="step-no">01</span>
+            <h3 data-i18n="step1.t">Choose your formula</h3>
+            <p data-i18n="step1.d">Pick a single product or a bundle. Not sure? Message us and we'll help you choose.</p>
+          </li>
+          <li>
+            <span class="step-no">02</span>
+            <h3 data-i18n="step2.t">Order &amp; confirm</h3>
+            <p data-i18n="step2.d">Send your order through the form, WhatsApp or email. We confirm details and arrange secure payment.</p>
+          </li>
+          <li>
+            <span class="step-no">03</span>
+            <h3 data-i18n="step3.t">Discreet delivery</h3>
+            <p data-i18n="step3.d">Your order ships in plain, unbranded packaging — tracked to your door, worldwide.</p>
+          </li>
+          <li>
+            <span class="step-no">04</span>
+            <h3 data-i18n="step4.t">Subscribe &amp; save</h3>
+            <p data-i18n="step4.d">Keep your routine going with a monthly refill at a lower price. Pause or cancel anytime.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SHIPPING / GUARANTEE -->
+    <section class="section section-dark" id="shipping">
+      <div class="container delivery-grid">
+        <div class="delivery-copy">
+          <p class="eyebrow light" data-i18n="shipping.eyebrow">Shipping &amp; guarantee</p>
+          <h2 data-i18n="shipping.h2">Discreet, tracked, risk-free</h2>
+          <p data-i18n="shipping.p">
+            Every order ships in plain, unbranded packaging with full tracking. If you're not happy
+            within 60 days, we'll make it right.
+          </p>
+          <ul class="ticks">
+            <li data-i18n="shipping.t1">Plain, discreet packaging — nothing on the outside</li>
+            <li data-i18n="shipping.t2">Tracked worldwide shipping</li>
+            <li data-i18n="shipping.t3">60-day money-back guarantee</li>
+            <li data-i18n="shipping.t4">Friendly support over WhatsApp &amp; email</li>
+          </ul>
+          <p class="fineprint" data-i18n="shipping.fine">
+            Some ingredients are restricted in certain countries. We confirm we can ship to you
+            before any payment is taken.
+          </p>
+        </div>
+        <div class="delivery-media">
+          <img id="shippingImage" src="assets/img/shipping.jpg" alt="Discreet shipping" loading="lazy"
+               onerror="this.onerror=null;this.src='https://picsum.photos/seed/verox-ship/640/720'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section section-alt" id="reviews">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="testi.eyebrow">Reviews</p>
+          <h2 data-i18n="testi.h2">What customers say</h2>
+          <p class="section-sub" data-i18n="testi.sub">Sample reviews shown below — replace with your real customer feedback.</p>
+        </header>
+        <div class="testi-grid" id="testiGrid"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+          <h2 data-i18n="faq.h2">Good questions, honest answers</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary data-i18n="faq.q1">How do I pay?</summary>
+            <p data-i18n="faq.a1">Send your order through the form, WhatsApp or email. We'll confirm availability, shipping and the total, then share a secure payment link. No payment is taken automatically on this site.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q2">Which countries do you ship to?</summary>
+            <p data-i18n="faq.a2">We ship worldwide to most countries. A few ingredients are restricted in certain markets — we always confirm we can deliver to you before you pay.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q3">How long does delivery take?</summary>
+            <p data-i18n="faq.a3">Most orders arrive within 5–12 business days depending on your country, with tracking provided.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q4">Are the products safe and tested?</summary>
+            <p data-i18n="faq.a4">Yes. Our supplements are made in audited facilities and third-party tested for purity and potency. If you take medication or have a health condition, consult your doctor first.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q5">Can I subscribe or cancel anytime?</summary>
+            <p data-i18n="faq.a5">Yes. Subscribe &amp; save gives you a lower price on monthly refills, and you can pause or cancel anytime — just message us.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- INQUIRE / ORDER -->
+    <section class="section section-alt" id="inquire">
+      <div class="container narrow">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="inquire.eyebrow">Order / Inquire</p>
+          <h2 data-i18n="inquire.h2">Place your order or ask us anything</h2>
+          <p class="section-sub" data-i18n="inquire.sub">
+            Send us a note and we'll reply within 24 hours with availability, pricing and shipping to
+            your country. No payment is taken on this site.
+          </p>
+        </header>
+
+        <form class="inquiry" id="inquiryForm" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name" data-i18n="form.name">Full name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="field">
+              <label for="country" data-i18n="form.country">Country / City</label>
+              <input type="text" id="country" name="country" data-i18n-ph="form.countryPh" placeholder="e.g. Austin, USA" required />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email" data-i18n="form.email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="field">
+              <label for="whatsapp" data-i18n="form.whatsapp">WhatsApp / Phone</label>
+              <input type="text" id="whatsapp" name="whatsapp" placeholder="+1 ..." />
+            </div>
+          </div>
+          <div class="field">
+            <label for="product" data-i18n="form.product">Product of interest</label>
+            <select id="product" name="product">
+              <option value="Not sure yet" data-i18n="form.notsure">Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="form.message">Message</label>
+            <textarea id="message" name="message" rows="4" data-i18n-ph="form.msgPh" placeholder="Tell us which products, quantity, and any questions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-block" data-i18n="form.submit">Send order / inquiry</button>
+          <p class="form-note" id="formNote"></p>
+          <p class="form-alt">
+            <span data-i18n="form.alt">Prefer to chat?</span>
+            <a class="js-wa" href="#">WhatsApp</a>
+            · <a class="js-fb" href="#">Facebook</a>
+            · <a href="mailto:hello@example.com">hello@example.com</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- PRODUCT DETAIL MODAL -->
+  <div class="breed-modal" id="productModal" data-close>
+    <div class="bm-dialog" role="dialog" aria-modal="true">
+      <button class="bm-close" data-close aria-label="Close">&times;</button>
+      <div class="bm-body" id="productModalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="brand-mark footer-brand">VE<span>ROX</span></span>
+        <p data-i18n="footer.tagline">Natural men's vitality, shipped discreetly worldwide.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.explore">Explore</h4>
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#shipping" data-i18n="nav.shipping">Shipping</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <a href="mailto:hello@example.com">hello@example.com</a>
+        <a class="js-wa" href="#">WhatsApp</a>
+        <a class="js-fb" href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> VEROX. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p class="disclaimer" data-i18n="footer.disclaimer">
+        These statements have not been evaluated by the FDA. This product is not intended to diagnose,
+        treat, cure or prevent any disease. Consult your physician before use. Demo images are placeholders.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

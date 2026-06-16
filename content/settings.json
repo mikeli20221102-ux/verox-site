@@ -1,0 +1,15 @@
+{
+  "email": "hello@example.com",
+  "formEndpoint": "",
+  "whatsapp": "",
+  "facebook": "",
+  "stats": {
+    "customers": "8,000+",
+    "countries": "20+",
+    "reorder": "72%",
+    "satisfaction": "4.8/5"
+  },
+  "aboutImage": "assets/img/about-brand.jpg",
+  "heroImage": "assets/img/hero.jpg",
+  "shippingImage": "assets/img/shipping.jpg"
+}

@@ -1,0 +1,118 @@
+# Decap CMS — VEROX 后台
+# 首次部署后：把 site_url / display_url 改成你的 Netlify 域名
+# Netlify 需开启：Identity + Git Gateway（见 CMS-SETUP.md）
+
+backend:
+  name: git-gateway
+  branch: main
+
+# 本地调试后台时可取消注释，并运行：npx decap-server
+# local_backend: true
+
+media_folder: assets/img
+public_folder: /assets/img
+
+site_url: https://verox.netlify.app
+display_url: https://verox.netlify.app
+
+locale: zh_Hans
+
+collections:
+  - name: settings
+    label: 站点设置
+    files:
+      - name: site_settings
+        label: 联系方式 & 数据
+        file: content/settings.json
+        fields:
+          - { label: 接单邮箱, name: email, widget: string }
+          - { label: Formspree 地址, name: formEndpoint, widget: string, required: false }
+          - { label: WhatsApp（国际格式纯数字）, name: whatsapp, widget: string, required: false }
+          - { label: Facebook 链接, name: facebook, widget: string, required: false }
+          - label: 数据条（信任背书）
+            name: stats
+            widget: object
+            fields:
+              - { label: 满意客户, name: customers, widget: string, default: "8,000+" }
+              - { label: 配送国家, name: countries, widget: string, default: "20+" }
+              - { label: 复购率, name: reorder, widget: string, default: "72%" }
+              - { label: 平均评分, name: satisfaction, widget: string, default: "4.8/5" }
+          - { label: 关于我们配图, name: aboutImage, widget: image, required: false }
+          - { label: 首页大图, name: heroImage, widget: image, required: false }
+          - { label: 配送板块配图, name: shippingImage, widget: image, required: false }
+
+  - name: products
+    label: 产品管理
+    files:
+      - name: products_list
+        label: 所有产品
+        file: content/products.json
+        fields:
+          - label: 产品列表
+            name: items
+            widget: list
+            summary: "{{fields.name}} · ${{fields.priceFrom}} · {{fields.published}}"
+            fields:
+              - { label: ID（英文小写，新增时填写，勿改已有）, name: key, widget: string, pattern: ['^[a-z0-9-]+$', '仅小写字母、数字、连字符'] }
+              - { label: 上架显示, name: published, widget: boolean, default: true }
+              - { label: 英文名, name: name, widget: string }
+              - { label: 中文名, name: zh, widget: string }
+              - { label: 价格 USD, name: priceFrom, widget: number, value_type: int, min: 0 }
+              - { label: 单位（英文，如 / month / one-time）, name: unit_en, widget: string, required: false, default: "/ month" }
+              - { label: 单位（中文，如 / 月 / 单次）, name: unit_zh, widget: string, required: false, default: "/ 月" }
+              - { label: 封面图（卡片缩略图）, name: coverImage, widget: image }
+              - label: 详情相册（可多图）
+                name: gallery
+                widget: list
+                summary: "{{fields.image}}"
+                field: { label: 图片, name: image, widget: image }
+              - { label: 标签（英文）, name: tag_en, widget: string }
+              - { label: 标签（中文）, name: tag_zh, widget: string }
+              - { label: 短介绍（英文）, name: desc_en, widget: text }
+              - { label: 短介绍（中文）, name: desc_zh, widget: text }
+              - { label: 详细介绍（英文）, name: long_en, widget: text }
+              - { label: 详细介绍（中文）, name: long_zh, widget: text }
+              - { label: 形式（英文）, name: format_en, widget: string }
+              - { label: 形式（中文）, name: format_zh, widget: string }
+              - { label: 用量（英文）, name: serving_en, widget: string }
+              - { label: 用量（中文）, name: serving_zh, widget: string }
+              - { label: 核心成分（英文）, name: actives_en, widget: string }
+              - { label: 核心成分（中文）, name: actives_zh, widget: string }
+              - { label: 规格（英文）, name: supply_en, widget: string }
+              - { label: 规格（中文）, name: supply_zh, widget: string }
+              - { label: 适合（英文）, name: bestfor_en, widget: string }
+              - { label: 适合（中文）, name: bestfor_zh, widget: string }
+
+  - name: videos
+    label: 视频
+    files:
+      - name: videos_list
+        label: 视频列表
+        file: content/videos.json
+        fields:
+          - label: 视频
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: 标题, name: title, widget: string }
+              - { label: 副标题/说明, name: note, widget: string, required: false }
+              - { label: 封面图, name: poster, widget: image }
+              - { label: 视频文件路径（如 assets/video/apex-drive.mp4）, name: src, widget: string, required: false, hint: "上传到 assets/video/ 后填相对路径，留空则只显示封面" }
+
+  - name: testimonials
+    label: 客户评价
+    files:
+      - name: testimonials_list
+        label: 评价列表
+        file: content/testimonials.json
+        fields:
+          - label: 评价
+            name: items
+            widget: list
+            summary: "{{fields.name}} · {{fields.country}}"
+            fields:
+              - { label: 姓名, name: name, widget: string }
+              - { label: 国家/城市, name: country, widget: string }
+              - { label: 星级 1-5, name: rating, widget: number, value_type: int, min: 1, max: 5, default: 5 }
+              - { label: 评价内容, name: quote, widget: text }
