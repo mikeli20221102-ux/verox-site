@@ -27,6 +27,20 @@
         "/assets/img/主图3.jpg",
         "/assets/img/主图4.jpg"
       ]
+    },
+    {
+      "published": true,
+      "unit_en": "/ month",
+      "unit_zh": "/ 月",
+      "name": "Perry",
+      "zh": "佩里",
+      "coverImage": "/assets/img/1.jpg",
+      "gallery": [
+        "/assets/img/2.jpg",
+        "/assets/img/3.jpg",
+        "/assets/img/4.jpg",
+        "/assets/img/5.jpg"
+      ]
     }
   ]
 }
