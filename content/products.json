@@ -13,6 +13,20 @@
         "/assets/img/4.jpg",
         "/assets/img/5.jpg"
       ]
+    },
+    {
+      "published": true,
+      "unit_en": "/ month",
+      "unit_zh": "/ 月",
+      "name": "Linda",
+      "zh": "琳达",
+      "coverImage": "/assets/img/主图1.jpg",
+      "gallery": [
+        "/assets/img/主图0.jpg",
+        "/assets/img/主图2.jpg",
+        "/assets/img/主图3.jpg",
+        "/assets/img/主图4.jpg"
+      ]
     }
   ]
 }
