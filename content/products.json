@@ -41,6 +41,20 @@
         "/assets/img/m14.jpg",
         "/assets/img/m15.jpg"
       ]
+    },
+    {
+      "published": true,
+      "unit_en": "/ month",
+      "unit_zh": "/ 月",
+      "zh": " 琳达",
+      "name": "LinDa",
+      "coverImage": "/assets/img/l1.jpg",
+      "gallery": [
+        "/assets/img/l2.jpg",
+        "/assets/img/l3.jpg",
+        "/assets/img/l4.jpg",
+        "/assets/img/详情英文版_09.jpg"
+      ]
     }
   ]
 }
