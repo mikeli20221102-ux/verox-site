@@ -55,6 +55,20 @@
         "/assets/img/l4.jpg",
         "/assets/img/详情英文版_09.jpg"
       ]
+    },
+    {
+      "published": true,
+      "unit_en": "/ month",
+      "unit_zh": "/ 月",
+      "name": "Nancy",
+      "zh": "南希",
+      "gallery": [
+        "/assets/img/nm2.jpg",
+        "/assets/img/nm3.jpg",
+        "/assets/img/nm4.jpg",
+        "/assets/img/nm5.jpg"
+      ],
+      "coverImage": "/assets/img/nm1.jpg"
     }
   ]
 }
